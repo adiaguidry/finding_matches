@@ -174,7 +174,7 @@ function cardClick(element) {
             display_stats();
             if (match_counter == total_possible_matches) {
                 console.log('won');
-                $('.won').text('You Won!! Play again?');
+                $('.won').text('You Won!! Click Reset to Play again!');
                 $('all_bubbles').hide();
             }
         }
