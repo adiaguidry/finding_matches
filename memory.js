@@ -147,6 +147,7 @@ function cardClick(element) {
     else {
         // stores src in second_card_clicked var
         second_card_clicked = $(element).parent().find('.front');
+        attempts++;
         //check if we have a match
         if (first_card_clicked.find('img').attr('src') == second_card_clicked.find('img').attr('src')) {
             $(first_card_clicked).find('img').addClass('match');
@@ -185,7 +186,6 @@ function cardClick(element) {
             $(reset_card_2).show(1000);
             first_card_clicked = null;
             second_card_clicked = null;
-            attempts++;
             display_stats();
             //I put a time out condition so player can see that they did not have a match before Bruce shows up!
             setTimeout(function(){
